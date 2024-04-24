@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Major Project WB FEB 2022</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f1f1f1;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 white;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+form input {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "", sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+form input:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+form #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 30px;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 white;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+
+table{
+  margin-bottom: 50px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  max-width: 800px;
+}
+
+.styled-table thead tr {
+  background-color: #e74c3c;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 20px 25px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+tbody tr:hover {
+  font-weight: bold;
+  background-color: #dddddd;
+}
+
+footer{
+  text-align: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a8a8a8;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  position: flex;
+  color: white;
+  margin-top: 150px;
+  font-weight: lighter;
+  padding-top: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-top: solid 2px white;
+
+}
+
+
+.search-bar {
+  width: 25%;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  border: solid gray 1px;
+  border-radius: 18px;
+  outline: none;
+}
+
+.search-ico {
+  position: absolute;
+  left: 10px;
+}
+.hi{
+    background-color: green;
+    color:white;
+    width:50%;
+    border-radius:20px;
+    text-align:center;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+    <div class="hi">
+        <p>succesfully added...</p>
+    </div>
+</center>
+  <h1>Parking Lot Management System</h1>
+  <div classname="form-container">
+    <h3>Add Details</h3>
+  <form class="cf" id="cf" action="/vdetails" method="post" onsubmit="return validate()">
+    <div class="">
+        <div class="form-floating">
+            <input type="text"  name="name" id="num" placeholder="Number ...si0dbhb" class="form-control" required>
+            <label for="num" >Name </label>
+           </div>
+           <div class="form-floating">
+            <input type="text"  name="vehicletype" id="num" placeholder="Number ...si0dbhb" class="form-control" required>
+            <label for="num" >Vehicle Name </label>
+           </div>
+           <div class="form-floating">
+            <input type="text"  name="vehiclenumber" id="num" placeholder="Number ...si0dbhb" class="form-control" required>
+            <label for="num" >Vehicle Number </label>
+           </div>
+           <div class="form-floating">
+            <input type="time"  name="entrytime" id="et" placeholder="Number ...si0dbhb" class="form-control" required>
+            <label for="num" >Entry Time</label>
+           </div>
+           <div class="form-floating">
+            <input type="time"  name="exittime" id="ext" placeholder="Number ...si0dbhb" class="form-control" required>
+            <label for="num" >Exit time</label>
+           </div>
+      <div class="form-floating">
+        <input type="date"  name="entrydate" id="ed" placeholder="Number ...si0dbhb" class="form-control" required>
+        <label for="num" >Entry Date</label>
+       </div>
+       <div class="form-floating">
+        <input type="date"  name="exitdate" id="exd" placeholder="Number ...si0dbhb" class="form-control" required>
+        <label for="num" >Exit Date</label>
+       </div>
+    </div>
+    <input type="submit" value="Submit" id="input-submit" />
+  </form>
+  </div>
+  <table class="styled-table">
+    <h3>Vechile Details</h3>
+    <div class="search-bar">
+        <form action="/search" method="post">
+      <input type="text" name="search" id="searchInput" placeholder="Enter Vehicle number" / name="search">
+      <button class="btn btn-secondary mt-3">Search</button>
+    </form>
+    </div>
+    
+    <tbody id="datagohere">
+
+    </tbody>
+  </table>
+  <div class="footer-container">
+    <footer>
+     
+    </footer>
+  </div>
+
+
+
+  
+  
+  
+
+</body>
+<script>
+    function validate(){
+       var a=document.getElementById("et").value;
+       var b=document.getElementById("ext").value;
+       var c=document.getElementById("ed").value;
+       var d=document.getElementById("exd").value;
+       if(a>b){
+      alert("Entry time should always less than exit time");
+        return false;
+       }
+       if(c>d){
+        alert("Entry date should always less than exit date");
+        return false;
+       }
+       
+return true;
+
+
+
+    }
+    var time=0;
+    function ab(){
+        time++;
+        if(time==3){
+            $(".hi").hide(1000);
+            time=0;
+        }
+    }
+    setInterval(ab,1000);
+</script>
+
+</html>
